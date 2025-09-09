@@ -72,4 +72,7 @@ jobs:
           app-name: 'msdocs-core-sql'
           slot-name: 'Production'
           package: .
+          app-settings: |
+            AZURE_SQL_CONNECTIONSTRING=${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+            AZURE_REDIS_CONNECTIONSTRING=${{ secrets.AZURE_REDIS_CONNECTIONSTRING }}
           
